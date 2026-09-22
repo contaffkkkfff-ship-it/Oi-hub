@@ -318,16 +318,14 @@ do
         winterCrackGui.Parent = uiParent
         pcall(protectGuiSafe, winterCrackGui)
 
-        local winterCrackNotice = Instance.new("TextLabel")
-        winterCrackNotice.Name = "WinterCrackNotice"
-        winterCrackNotice.Parent = winterCrackGui
-        winterCrackNotice.BackgroundColor3 = Color3.fromRGB(8, 8, 13)
-        winterCrackNotice.BackgroundTransparency = 0.12
-        winterCrackNotice.BorderSizePixel = 0
-        winterCrackNotice.Position = UDim2.new(0.5, -300, 0, 5)
-        winterCrackNotice.Size = UDim2.fromOffset(600, 36)
-        winterCrackNotice.ZIndex = 1000
-        winterCrackNotice.Font = Enum.Font.GothamBold
+        local winterCrackNotice = Instance.new
+        winterCrackNotice.TextColor3 = Color3.fromRGB(255, 255, 255)
+        winterCrackNotice.TextSize = 18
+        winterCrackNotice.TextXAlignment = Enum.TextXAlignment.Center
+        winterCrackNotice.TextYAlignment = Enum.TextYAlignment.Center
+        winterCrackNotice.Visible = true
+        local winterCrackStroke = Instance.new("UIStroke")
+        winterCrackStroke.Color = Color3.fromRGB(78, 127, 252)
         winterCrackStroke.Transparency = 0.35
         winterCrackStroke.Thickness = 1
         winterCrackStroke.Parent = winterCrackNotice
